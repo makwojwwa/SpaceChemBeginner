@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_SpaceChem_Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Gameplay" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="64x64" href="../../Skins/Favicons/spacechem_alpha_64.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/spacechem_alpha_128.png" />
+        <link rel="icon" sizes="128x128" href="../../Skins/Favicons/spacechem_alpha_128.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/spacechem_alpha_32.png" />
+        <link rel="icon" sizes="64x64" href="../../Skins/Favicons/spacechem_alpha_64.png" /><title>Programming a reactor – part 2</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="64x64" href="../../Skins/Favicons/spacechem_alpha_64.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/spacechem_alpha_128.png" />
+        <link rel="icon" sizes="128x128" href="../../Skins/Favicons/spacechem_alpha_128.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/spacechem_alpha_32.png" />
+        <link rel="icon" sizes="64x64" href="../../Skins/Favicons/spacechem_alpha_64.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Programming a reactor – part 2</h1>
+                                        <p>In the previous section you have successfully input atoms, created a bond between them, and output the molecule. However, that particular solution does not apply all the available basic instructions. You can learn how to use other basic instructions and to do some more basic actions by modifying the solution you have created in Part 1. At the same time you will learn how to make your solution faster.</p>
+                                        <h2>Rotating molecules, modifying instructions</h2>
+                                        <ol>
+                                            <li value="1">Open your solution, which should look like this:<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/01.jpg" title="Solution to be improved" alt="Solution to be improved" class="" /></p></li>
+                                            <li value="2">Click the <span class="instruction">Rotate</span> instruction located under the reactor, drag it to the closest grid cell on the right side of the blue <span class="instruction">Bond+</span> instruction.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/02.jpg" title="Rotate instruction inserted" alt="Rotate instruction inserted" /></p></li>
+                                        </ol>
+                                        <p class="between_images">Notice that you added a red instruction to a blue path and the instruction lies outside the path. The reason is that the blue waldo is unable to execute red instructions and vice versa. However, this situation can be fixed.</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="3">Right-click the <span class="instruction">Rotate</span> instruction you have just placed.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/03.jpg" title="Rotate instruction modification" alt="Rotate instruction modification" /></p></li>
+                                            <li value="4">Click <span class="tab_button">Blue Layer</span>.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/04.jpg" title="Rotate instruction changed to blue" alt="Rotate instruction changed to blue" /></p></li>
+                                        </ol>
+                                        <p class="between_images">Now you can see that the color of the instruction switched to blue. The blue waldo can execute this instruction. You should check if something changed. To do this, click the <span class="tab_button">Play</span> button.</p>
+                                        <p class="img_center">
+                                            <img src="../Resources/Images/Programming_A_Reactor_Bonding/14.jpg" title="Play button" alt="Play button" />
+                                        </p>
+                                        <p class="between_images">By default the <span class="instruction">Rotate</span> instruction rotates your molecule counter-clockwise. This is why the molecule did not fit correctly in the output area and was not output, which led to a collision. Click <span class="tab_button">Okay</span> so that you can proceed to fix this situation:</p>
+                                        <p class="img_center">
+                                            <img src="../Resources/Images/Programming_A_Reactor_2/24.jpg" title="Error - collision" alt="Error - collision" />
+                                        </p>
+                                        <ol data-mc-continue="true">
+                                            <li value="5">Right-click the <span class="instruction">Rotate</span> instruction you have just placed.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/05.jpg" title="Rotate instruction modification" alt="Rotate instruction modification" /></p></li>
+                                            <li value="6">Click the symbol with an arrow rotating clockwise.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/06.jpg" title="Rotate instruction changed to clockwise" alt="Rotate instruction changed to clockwise" /></p></li>
+                                            <li value="7">Click the <span class="tab_button">Play</span> button.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_Bonding/14.jpg" title="Play button" alt="Play button" /></p></li>
+                                        </ol>
+                                        <p class="between_images">The molecule fits the output area and the solution is correct. However, as you can see in the <span class="tab_button">Performance</span> tab, your solution uses 148 cycles now. This is the effect of the <span class="instruction">Rotate</span> instruction, which is responsible for one additional cycle per loop. Fortunately, this situation can be fixed as well.</p>
+                                        <h2>Making your solution faster</h2>
+                                        <p>The simplest way to make your solution faster is to reduce the length of the path along which your waldos run. The shorter their paths, the faster they can return to the beginning of the algorithm. Let's find out if this rule can be applied to your solution. </p>
+                                        <ol data-mc-continue="true">
+                                            <li value="8">Click <span class="tab_button">Continue</span>... <p class="img_center"><img src="../Resources/Images/Screenshots/Continue_After_Level_Complete.jpg" title="Continue button" alt="Continue button" /></p><p class="between_images">... and then click the SpaceChem symbol shown in the image below to reopen the assignment.</p><p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/08.jpg" title="Fifth assignment" alt="Fifth assignment" /></p></li>
+                                        </ol>
+                                        <p class="between_images">It looks like both the red and blue loop can be reduced. Let's start with the blue loop. The atom will be input in the third row counted from the bottom of the reactor, while the <span class="instruction">Start</span> instruction is placed in the second row counted from the bottom of the rector. You should change it.</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="9">Click the blue <span class="instruction">Start</span> instruction, drag it to the grid cell located directly above, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/09.jpg" title="Blue Start instruction moved" alt="Blue Start instruction moved" /></p></li>
+                                        </ol>
+                                        <p class="between_images">The loop fell apart and now you have to relocate other instructions to recreate it.</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="10">Click the blue <span class="instruction">Arrow Up</span> instruction located in the reactor, drag it to the grid cell with the blue <span class="instruction">Grab Drop</span> instruction, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/10.jpg" title="Blue Arrow Up instruction moved" alt="Blue Arrow Up instruction moved" /></p></li>
+                                            <li value="11">Click the blue <span class="instruction">Input</span> <span class="object">β</span><![CDATA[
+    ]]> instruction located in the reactor, drag it to the grid cell located immediately to the right of the <span class="instruction">Grab Drop</span> instruction, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/11.jpg" title="Blue Input instruction moved" alt="Blue Input instruction moved" /></p></li>
+                                        </ol>
+                                        <p class="between_images">Notice that you have two blue and two red <span class="instruction">Grab Drop</span> instructions. To avoid confusion, they should be modified:</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="12">Right-click the left blue <span class="instruction">Grab Drop</span> instruction and click the <span class="instruction">Grab</span> symbol.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/12.jpg" title="Grab/Drop instruction modification" alt="Grab/Drop instruction modification" /></p></li>
+                                            <li value="13">Right-click the right blue <span class="instruction">Grab Drop</span> instruction and click the <span class="instruction">Drop</span> symbol.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/13.jpg" title="Grab/Drop instruction modification" alt="Grab/Drop instruction modification" /></p></li>
+                                            <li value="14">Right-click the left red <span class="instruction">Grab Drop</span> instruction and click the <span class="instruction">Grab</span> symbol.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/14.jpg" title="Grab/Drop instruction modification" alt="Grab/Drop instruction modification" /></p></li>
+                                            <li value="15">Right-click the right red <span class="instruction">Grab Drop</span> instruction and click the <span class="instruction">Drop</span> symbol.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/15.jpg" title="Grab/Drop instruction modification" alt="Grab/Drop instruction modification" /></p></li>
+                                        </ol>
+                                        <p class="between_images">Now the instructions are much more legible. And because you placed the <span class="instruction">Rotate</span> instruction, you can drop the molecule earlier.</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="16">Click the blue <span class="instruction">Drop</span> instruction located in the reactor, drag it to the grid cell located directly above, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/16.jpg" title="Blue Drop instruction moved" alt="Blue Drop instruction moved" /></p></li>
+                                            <li value="17">Click the blue <span class="instruction">Output</span> <span class="object">ω</span><![CDATA[
+    ]]> instruction located in the reactor, drag it to the grid cell located directly above, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/17.jpg" title="Blue Output instruction moved" alt="Blue Output instruction moved" /></p></li>
+                                            <li value="18">Click the blue <span class="instruction">Arrow Left</span> instruction located in the reactor, drag it to the grid cell located directly above, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/18.jpg" title="Blue Arrow Left instruction moved" alt="Blue Arrow Left instruction moved" /></p></li>
+                                            <li value="19">Click the red <span class="instruction">Arrow Up</span> instruction located in the reactor, drag it to the grid cell with the red <span class="instruction">Drop</span> instruction, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/19.jpg" title="Red Arrow Up instruction moved" alt="Red Arrow Up instruction moved" /></p></li>
+                                            <li value="20">Click the red <span class="instruction">Arrow Left</span> instruction located in the reactor, drag it to the grid cell with the red <span class="instruction">Start</span> instruction, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/20.jpg" title="Red Arrow Left instruction moved" alt="Red Arrow Left instruction moved" /></p></li>
+                                        </ol>
+                                        <p class="between_images">The loops are shorter so now you should check your solution.</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="21"> Click the <span class="tab_button">Play</span> button.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_Bonding/14.jpg" title="Play button" alt="Play button" /></p></li>
+                                        </ol>
+                                        <p class="between_images">Unfortunately, the reaction could not be completed and there is an error. After shortening the loops, both waldos are no longer synchronized – the blue waldo reached the <span class="object">bonder</span> faster than the red waldo and the bond was not added. This situation can be fixed as well.</p>
+                                        <h2>Synchronizing the waldos</h2>
+                                        <p class="between_images">For a bond to be formed, both atoms must be present on adjacent <span class="object">bonders</span> at the same time. You can try to synchronize the waldos in two ways. In this solution, the red waldo has to run along 8 grid cells to reach its <span class="object">bonder</span>, while the blue waldo has to run only 7 grid cells to reach its <span class="object">bonder</span>. So you should try moving the red waldo one cell closer to the <span class="object">bonder</span>.</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="22">Click <span class="tab_button">Okay</span> to return to the reactor view.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/22.jpg" title="Error - invalid molecule" alt="Error - invalid molecule" /></p></li>
+                                            <li value="23">Click the red <span class="instruction">Start</span> instruction, drag it to the grid cell immediately to the left, and drop it there.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/23.jpg" title="Red Start instruction moved" alt="Red Start instruction moved" /></p></li>
+                                            <li value="24">Click the <span class="tab_button">Play</span> button.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_Bonding/14.jpg" title="Play button" alt="Play button" /></p></li>
+                                        </ol>
+                                        <p class="between_images">Relocating the red <span class="instruction">Start</span> instruction synchronized both waldos at the beginning, thanks to which a molecule was created and output. However, because the red loop is much shorter than the blue loop, the red waldo input and dropped its atom more often than the blue waldo was able to form a bond and output the molecule. The result was a collision.</p>
+                                        <p class="between_images">You will fix this situation by adding <span class="instruction">Sync</span> instructions.</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="25">Click <span class="tab_button">Okay</span> to return to the reactor view.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/24.jpg" title="Error - collision" alt="Error - collision" /></p></li>
+                                            <li value="26">Click the <span class="instruction">Sync</span> instruction located under the reactor, drag it to the grid cell  immediately to the right the red <span class="instruction">Start</span> instruction.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/26.jpg" title="Red Sync instruction inserted" alt="Red Sync instruction inserted" /></p></li>
+                                            <li value="27">Click the <span class="tab_button">Tab</span> toggler in the <span class="tab_button">Layer Controls</span> section to the right of the available instructions to switch to the blue layer.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_Bonding/04a.jpg" title="Tab toggler" alt="Tab toggler" /></p></li>
+                                            <li value="28">Click the <span class="instruction">Sync</span> instruction located under the reactor, drag it to the grid cell immediately to the right of the blue <span class="instruction">Start</span> instruction.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_2/28.jpg" title="Blue Sync instruction inserted" alt="Blue Sync instruction inserted" /></p></li>
+                                            <li value="29">Click the <span class="tab_button">Play</span> button.<p class="img_center"><img src="../Resources/Images/Programming_A_Reactor_Bonding/14.jpg" title="Play button" alt="Play button" /></p></li>
+                                        </ol>
+                                        <p class="between_images">Success! There were no collisions and your solution used 128 cycles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
