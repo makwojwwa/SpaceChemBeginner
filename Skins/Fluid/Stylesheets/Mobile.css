@@ -1,6 +1,6 @@
 /*<meta />*/
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-device-width: 767px)
 {
 	nav.title-bar
 	{
@@ -26,13 +26,13 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background: #ffdead;
-		background: -moz-linear-gradient(top, #ffdead 0%, #8b4513 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffdead), color-stop(100%,#8b4513));
-		background: -webkit-linear-gradient(top, #ffdead 0%, #8b4513 100%);
-		background: -o-linear-gradient(top, #ffdead 0%,#8b4513 100%);
-		background: -ms-linear-gradient(top, #ffdead 0%,#8b4513 100%);
-		background: linear-gradient(top, #ffdead 0%,#8b4513 100%);
-		-pie-background: linear-gradient(#ffdead, #8b4513);
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	.search-input
@@ -75,6 +75,13 @@
 	{
 		left: auto;
 		right: 35px;
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	.central-dropdown .central-account-drop
@@ -102,12 +109,25 @@
 	{
 		left: auto;
 		right: -25px;
-		background-color: #ffffff;
+		background: #ffffff;
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	div.central-dropdown-content > a
 	{
-		
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	.knowledge-panel-container .micro-response-title a:visited
@@ -766,42 +786,92 @@
 
 	.off-canvas
 	{
-		background-color: #303335;
+		background: #303335;
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	.off-canvas ul ul
 	{
-		background-color: #303335;
+		background: #303335;
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	ul.off-canvas-list li a
 	{
-		
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	ul.off-canvas-list ul > li > a
 	{
-		
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	ul.off-canvas-list ul ul > li > a
 	{
-		
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	ul.off-canvas-list ul ul ul > li > a
 	{
-		
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a
 	{
-		
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a
 	{
-		
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 	}
 
 	ul.off-canvas-list li a.selected
@@ -832,7 +902,13 @@
 	.title-bar .menu-icon span
 	{
 		background: transparent url('Images/Menu.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Menu.png') no-repeat center center;
+		background: url('Images/Menu.png') no-repeat center center, -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: url('Images/Menu.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: url('Images/Menu.png') no-repeat center center, -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: url('Images/Menu.png') no-repeat center center, -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: url('Images/Menu.png') no-repeat center center, -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: url('Images/Menu.png') no-repeat center center, linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: url('Skins/Fluid/Stylesheets/Images/Menu.png') no-repeat center center, linear-gradient(#ffebcd, #cd853f);
 	}
 
 	nav.title-bar .menu-icon
@@ -978,14 +1054,14 @@
 	.search-bar .search-field
 	{
 		background: #ffdead;
-		background: -moz-linear-gradient(top, #ffdead 0%, #8b4513 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffdead), color-stop(100%,#8b4513));
-		background: -webkit-linear-gradient(top, #ffdead 0%, #8b4513 100%);
-		background: -o-linear-gradient(top, #ffdead 0%,#8b4513 100%);
-		background: -ms-linear-gradient(top, #ffdead 0%,#8b4513 100%);
-		background: linear-gradient(top, #ffdead 0%,#8b4513 100%);
-		-pie-background: linear-gradient(#ffdead, #8b4513);
-		padding-right: 50px;
+		background: -moz-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffebcd), color-stop(100%,#cd853f));
+		background: -webkit-linear-gradient(top, #ffebcd 0%, #cd853f 100%);
+		background: -o-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: -ms-linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		background: linear-gradient(top, #ffebcd 0%,#cd853f 100%);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
+		padding-right: 18.3333339691162px;
 	}
 
 	.search-filter-content
@@ -996,7 +1072,7 @@
 
 	.search-bar .search-filter-wrapper.open
 	{
-		-pie-background: linear-gradient(#ffdead, #8b4513);
+		-pie-background: linear-gradient(#ffebcd, #cd853f);
 		background-color: #ffffff;
 	}
 
@@ -1226,6 +1302,11 @@
 	{
 		background-repeat: no-repeat;
 		background: transparent url('Images/icon-search.png') no-repeat center center;
+	}
+
+	.search-bar .search-filter-wrapper
+	{
+		right: 5vw;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover

@@ -4,89 +4,78 @@
 body
 {
 	background-color: transparent;
-	background: #ffdead;
 	margin: 0px;
 	padding: 0px;
+	background: #ffebcd;
 }
 
 h1
 {
 	font-family: Arial, Helvetica, sans-serif;
-	padding: 10px;
 	text-decoration: none;
 	color: #a0522d;
+	margin: 0px;
+	font-size: 2.2rem;
+	padding: 0.67rem;
 }
 
 h2
 {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	max-width: inherit;
-	margin: 10px;
 	text-decoration: none;
 	color: #a0522d;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	font-size: 1.5rem;
+	padding: 0.67rem;
 }
 
 h3
 {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	text-decoration: none;
 	color: #a0522d;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	font-size: 1.3rem;
+	padding: 0.67rem;
 }
 
 p
 {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
-	line-height: 1.5em;
-	margin: 10px;
-	padding: 10px;
 	border-width: 2px;
 	border-style: dotted;
 	border-color: yellowgreen;
 	border: none 0px transparent;
 	background-color: transparent;
-	color: #a0522d;
 	mc-hyphenate: never;
-}
-
-thead th
-{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	background-color: lavender;
+	color: #8b4513;
+	margin: 0px;
+	font-size: 1rem;
+	line-height: 140%;
+	padding: 0.67rem;
 }
 
 td
 {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	text-align: center;
 	background-color: gold;
 	border-style: double;
 	border-color: #8b0000;
 	mc-hyphenate: never;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	text-align: left;
 }
 
 th
 {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	background-color: blanchedalmond;
 	border-style: inset;
 	border-bottom-color: #8b0000;
 	border-color: #8b0000;
-}
-
-th.three_col
-{
-	width: 30%;
-}
-
-td.three_col
-{
-	width: 35%;
-}
-
-th.two_col
-{
-	width: 30%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
 }
 
 .solution
@@ -117,14 +106,12 @@ em.term
 
 ul
 {
-	line-height: 120%;
 	list-style-image: url('Resources/Images/spacechem_alpha.png');
-}
-
-ul li
-{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	line-height: 1.3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	line-height: 140%;
+	text-align: left;
+	margin: 0px;
 }
 
 .instruction
@@ -133,9 +120,9 @@ ul li
 	font-weight: bold;
 	text-decoration: none;
 	color: #000000;
-	font-family: Verdana;
-	font-size: 1em;
 	text-transform: uppercase;
+	font-size: inherit;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 img
@@ -145,26 +132,42 @@ img
 
 li
 {
-	color: #a0522d;
-	margin: 10px;
-	line-height: 150%;
 	mc-hyphenate: never;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	color: #8b4513;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 ol
 {
-	font-family: sans-serif;
-	margin-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	font-size: 1rem;
+	line-height: 140%;
+	margin: 0px;
+	margin-left: 1.8rem;
+	padding-left: 0;
 }
 
 div.GlossaryPageHeading
 {
-	font-family: sans-serif;
+	font-family: Arial;
+	font-size: 1.3rem;
 }
 
 div.GlossaryPageDefinition
 {
-	font-family: sans-serif;
+	font-weight: normal;
+	mc-hyphenate: never;
+	font-size: 1rem;
+	font-family: Arial;
+	line-height: 120%;
 }
 
 div.GlossaryPageTerm
@@ -175,13 +178,17 @@ div.GlossaryPageTerm
 MadCap|glossaryTerm.Popup
 {
 	color: #000000;
-	font-family: Verdana;
+	font-family: Arial;
 }
 
 MadCap|popupBody
 {
 	text-align: left;
 	font-family: Verdana;
+	padding: 0.3rem;
+	visibility: visible;
+	mc-popup-width: 25vw;
+	width: 35vw;
 }
 
 MadCap|breadcrumbsProxy
@@ -198,17 +205,50 @@ _generic_.img_center
 
 MadCap|glossaryTerm
 {
-	mc-term-display: expanding-text;
 	color: #000000;
+	font-family: Arial;
+	mc-term-display: popup;
+}
+
+dl
+{
+	margin: 0;
+	margin-left: 0;
+	padding: 0.67rem;
+}
+
+dt
+{
+	font-family: Arial;
+	color: #8b4513;
+	font-weight: bold;
+	margin-bottom: 0.67rem;
+	margin-top: 0.67rem;
+}
+
+dd
+{
+	font-family: Arial;
+	color: #8b4513;
+	margin-left: 3rem;
+	line-height: 140%;
+	text-align: justify;
+}
+
+MadCap|popup
+{
+	
 }
 
 @media print
 {
 	h2
 	{
-		margin: 10px;
-		padding: 10px;
 		page-break-before: avoid;
+		font-size: 1.5em;
+		margin-left: 0px;
+		margin: 0px;
+		padding: 0.67rem;
 	}
 
 	p
@@ -218,20 +258,23 @@ MadCap|glossaryTerm
 		border-style: none;
 		border-width: 0px;
 		color: #000000;
-		margin: 5px;
-		padding: 5px;
 		margin-top: 0px;
-		margin-left: 10px;
-		margin-right: 10px;
-		padding-top: 0px;
-		padding-left: 10px;
-		padding-right: 10px;
+		font-size: 1em;
+		margin-left: 0px;
+		margin: 0px;
+		margin-right: 0px;
+		padding: 0.67rem;
+		padding-left: 0.67rem;
+		padding-right: 0.67rem;
+		padding-top: 0.67rem;
 	}
 
 	h1
 	{
-		margin: 5px;
-		padding: 5px;
+		font-size: 2em;
+		margin-left: 0px;
+		margin: 0px;
+		padding: 0.67rem;
 	}
 
 	table
@@ -242,9 +285,11 @@ MadCap|glossaryTerm
 
 	h3
 	{
-		margin: 10px;
-		padding: 10px;
 		mc-heading-level: 0;
+		font-size: 1.17em;
+		margin-left: 0px;
+		margin: 0px;
+		padding: 0.67rem;
 	}
 
 	body
@@ -255,8 +300,11 @@ MadCap|glossaryTerm
 	li
 	{
 		color: #000000;
-		margin-bottom: 5px;
-		margin-top: 5px;
+		font-size: inherit;
+		margin: 0px;
+		margin-bottom: 0px;
+		padding-left: 0px;
+		margin-top: 0;
 	}
 
 	MadCap|tocProxy.SpaceChem
@@ -268,18 +316,21 @@ MadCap|glossaryTerm
 	p.TOC1
 	{
 		margin: 0px;
+		padding: 0.3rem;
 	}
 
 	p.TOC2
 	{
 		margin: 0px;
 		margin-left: 10px;
+		padding: 0.3rem;
 	}
 
 	p.TOC3
 	{
 		margin: 0px;
 		margin-left: 20px;
+		padding: 0.3rem;
 	}
 
 	.list_heading
@@ -297,11 +348,113 @@ MadCap|glossaryTerm
 	ul
 	{
 		list-style-image: url('Resources/Images/spacechem_alpha_32.png');
+		font-size: 1em;
+		padding-left: 0px;
+		padding: 0px;
+		text-indent: 0;
+		margin-left: 0px;
 	}
 
 	.heading_variable
 	{
 		color: #a9a9a9;
+	}
+
+	td
+	{
+		font-size: 0.9em;
+	}
+
+	th
+	{
+		font-size: 1em;
+	}
+
+	ol
+	{
+		font-size: 1em;
+		margin: 0px;
+		padding: 0px;
+		margin-left: 2rem;
+		padding-left: 0;
+	}
+
+	p.dropdown
+	{
+		padding-left: 0;
+		margin-top: 0.5rem;
+	}
+
+	p.footer
+	{
+		border-top: double 6pt #ff0000;
+		padding-bottom: 10px;
+	}
+
+	MadCap|footnote
+	{
+		color: #000000;
+		font-family: Arial;
+		text-align: justify;
+	}
+
+	ul.topics
+	{
+		margin-left: 2rem;
+		margin-top: 0;
+		padding-top: 0.5rem;
+	}
+
+	p.test
+	{
+		padding: 0px;
+		line-height: 140%;
+		border: solid 2px #000000;
+		margin-top: 5px;
+	}
+
+	MadCap|dropDown
+	{
+		margin-top: 0.67rem;
+	}
+
+	div.GlossaryPageEntry
+	{
+		font-family: Arial;
+		margin-bottom: 6pt;
+	}
+
+	div.GlossaryPageTerm
+	{
+		font-family: Arial;
+	}
+
+	MadCap|glossaryTerm
+	{
+		mc-term-display: hyperlink;
+	}
+
+	div.GlossaryPageHeading
+	{
+		font-size: 1.2rem;
+		margin-top: 10pt;
+		margin-bottom: 5pt;
+	}
+
+	div.GlossaryPageDefinition
+	{
+		margin-left: 0;
+		line-height: 140%;
+	}
+
+	dd
+	{
+		color: #000000;
+	}
+
+	dt
+	{
+		color: #000000;
 	}
 }
 
@@ -314,12 +467,12 @@ body.titlepage
 
 h1.titlepage
 {
-	color: #ffe4c4;
 	text-decoration: none;
 	text-align: center;
 	background: #a0522d;
 	background-size: 100%;
 	margin: 0px;
+	color: #ffebcd;
 }
 
 p.titlepage
@@ -329,8 +482,8 @@ p.titlepage
 	border-style: none;
 	border-width: 0px;
 	background-color: #a0522d;
-	color: #ffe4c4;
 	margin: 0px;
+	color: #ffebcd;
 }
 
 h2.titlepage
@@ -343,10 +496,10 @@ h2.titlepage
 p.footer
 {
 	background: #a0522d;
-	color: #ffdead;
 	margin-top: 10px;
 	border-top: double 5px #ff0000;
 	margin: 0px;
+	color: #ffebcd;
 }
 
 MadCap|tocProxy.SpaceChem
@@ -358,8 +511,8 @@ MadCap|tocProxy.SpaceChem
 {
 	font-weight: bold;
 	color: #000000;
-	font-family: Verdana;
-	font-size: 1em;
+	font-size: inherit;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .list_heading
@@ -367,14 +520,15 @@ MadCap|tocProxy.SpaceChem
 	line-height: 100%;
 	font-weight: bold;
 	color: #a0522d;
+	font-size: 1rem;
 }
 
 .object
 {
 	font-weight: bold;
 	color: #000000;
-	font-family: Verdana;
-	font-size: 1em;
+	font-size: inherit;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .img_center
@@ -387,9 +541,10 @@ MadCap|tocProxy.SpaceChem
 p.dropdown
 {
 	margin: 0px;
-	padding-left: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	font-size: inherit;
+	padding-left: 0;
 }
 
 .img_caption
@@ -403,5 +558,12 @@ p.between_images
 {
 	margin: 0px 0px 0px 10px;
 	padding: 0px 10px 0px 0px;
+}
+
+ul.topics
+{
+	text-align: justify;
+	padding-left: 0;
+	margin-left: 1.8rem;
 }
 

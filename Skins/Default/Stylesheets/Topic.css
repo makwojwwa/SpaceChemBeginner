@@ -430,46 +430,30 @@ a.glossaryTerm
 	opacity: 0;
 }
 
-div.MCBreadcrumbsBox_0
-{
-	font-family: Calibri;
-	font-style: italic;
-	color: #a0522d;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
-
-.xref
-{
-	color: blue;
-	text-decoration: underline;
-}
-
 .glossaryTerm
 {
 	color: #000000;
+	font-family: Arial;
 	font-weight: bold;
 }
 
 .glossaryTerm:link
 {
 	color: #000000;
+	font-family: Arial;
 	font-weight: bold;
 }
 
 .glossaryTerm.glossaryTermPopup
 {
 	color: #000000;
-	font-family: Verdana;
+	font-family: Arial;
 }
 
 .glossaryTerm.glossaryTermPopup:link
 {
 	color: #000000;
-	font-family: Verdana;
+	font-family: Arial;
 }
 
 .MCTextPopup_Open.MCTextPopupHotSpot_.MCTextPopupHotSpot_Popup
@@ -492,11 +476,31 @@ div.MCBreadcrumbsBox_0
 {
 	text-align: left;
 	font-family: Verdana;
+	padding: 0.3rem;
+	visibility: visible;
+	width: 35vw;
 	color: #000000;
 	background-color: #dcdcdc;
 	border: solid 1px #000000;
 	margin: 0px;
-	padding: 5px;
+}
+
+div.MCBreadcrumbsBox_0
+{
+	font-family: Calibri;
+	font-style: italic;
+	color: #a0522d;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.xref
+{
+	color: blue;
+	text-decoration: underline;
 }
 
 .dropDownHotspot
@@ -562,12 +566,12 @@ table.GenTOCTable1
 	text-decoration: inherit;
 	text-align: inherit;
 	background-color: transparent;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0.67rem;
+	padding-right: 0.67rem;
+	padding-top: 0.67rem;
+	padding-bottom: 0.67rem;
 	border-left-style: none;
 	border-right-style: none;
 	border-top-style: none;
@@ -608,7 +612,6 @@ td.GenTOCText1
 	background-color: transparent;
 	background-image: none;
 	float: inherit;
-	font-size: inherit;
 	font-style: inherit;
 	font-variant: inherit;
 	text-transform: inherit;
@@ -617,7 +620,8 @@ td.GenTOCText1
 	text-decoration: inherit;
 	mc-leader-format: '.';
 	mc-leader-indent: 5pt;
-	color: #a0522d;
+	color: #8b4513;
+	font-size: 1rem;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	text-align: justify;
@@ -648,7 +652,6 @@ a.GenTOCText1:link
 	background-color: transparent;
 	background-image: none;
 	float: inherit;
-	font-size: inherit;
 	font-style: inherit;
 	font-variant: inherit;
 	text-transform: inherit;
@@ -656,7 +659,8 @@ a.GenTOCText1:link
 	word-spacing: inherit;
 	mc-leader-format: '.';
 	mc-leader-indent: 5pt;
-	color: #a0522d;
+	color: #8b4513;
+	font-size: 1rem;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	text-decoration: none;
@@ -688,7 +692,6 @@ a.GenTOCText1
 	background-color: transparent;
 	background-image: none;
 	float: inherit;
-	font-size: inherit;
 	font-style: inherit;
 	font-variant: inherit;
 	text-transform: inherit;
@@ -696,7 +699,8 @@ a.GenTOCText1
 	word-spacing: inherit;
 	mc-leader-format: '.';
 	mc-leader-indent: 5pt;
-	color: #a0522d;
+	color: #8b4513;
+	font-size: 1rem;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	text-decoration: none;
@@ -728,7 +732,6 @@ td.GenTOCAutoText1
 	background-color: transparent;
 	background-image: none;
 	float: inherit;
-	font-size: inherit;
 	font-style: inherit;
 	font-variant: inherit;
 	text-transform: inherit;
@@ -737,7 +740,8 @@ td.GenTOCAutoText1
 	text-decoration: inherit;
 	text-align: inherit;
 	margin: 0;
-	color: #a0522d;
+	color: #8b4513;
+	font-size: 1rem;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 }
@@ -767,7 +771,6 @@ td.GenTOCPageText1
 	background-color: transparent;
 	background-image: none;
 	float: inherit;
-	font-size: inherit;
 	font-style: inherit;
 	font-variant: inherit;
 	text-transform: inherit;
@@ -776,7 +779,8 @@ td.GenTOCPageText1
 	text-decoration: inherit;
 	margin: 0;
 	vertical-align: bottom;
-	color: #a0522d;
+	color: #8b4513;
+	font-size: 1rem;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	text-align: right;
@@ -840,6 +844,7 @@ ul.MCGlossaryProxy_list_heading_0
 	line-height: 100%;
 	font-weight: bold;
 	color: #a0522d;
+	font-size: 1rem;
 }
 
 .MCWebHelpFramesetLink a
