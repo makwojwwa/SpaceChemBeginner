@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2022 r3 Generated HTML5.fltar" Date="2023-05-29T14:57:24.7526091+02:00" Branch="master" Commit="c6ccd47cb54bc5f87f5bafcfa2bea6b9980e0d09">
+<MadCapLog Protocol="2" Description="MadCap Flare 2022 r3 Generated HTML5.fltar" Date="2023-05-31T11:00:16.6571481+02:00" Branch="master" Commit="c6ccd47cb54bc5f87f5bafcfa2bea6b9980e0d09">
     <Messages>Compiling target HTML5...
 Removing previously generated content...
 Loading skin info...
@@ -123,8 +123,8 @@ Generated Skins\Default\Stylesheets\TextEffects.micro-content.css
 Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
-Ignored Compiler Warnings: 11
-Output generated in 9 second(s).
+Ignored Compiler Warnings: 10
+Output generated in 10 second(s).
 
 Done
 Saving log to "D:\Komunikacja techniczna\Vasylyna Burger\Vistula01\Output\makow\HTML5\HTML5.mclog"

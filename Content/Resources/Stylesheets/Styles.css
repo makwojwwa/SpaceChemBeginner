@@ -575,7 +575,7 @@ p.footer-sub
 	margin-top: 14px;
 }
 
-@media only screen and (max-device-width: 1279px)
+@media only screen and (max-width: 1279px)
 {
 	/* Home page topic */
 
@@ -639,7 +639,7 @@ p.footer-sub
 	}
 }
 
-@media only screen and (max-device-width: 767px)
+@media only screen and (max-width: 767px)
 {
 	/* Home page topic */
 
