@@ -430,6 +430,24 @@
 	opacity: 0;
 }
 
+.micro-response1053736740 .xref
+{
+	color: blue;
+	text-decoration: underline;
+}
+
+.micro-response1053736740 div.MCBreadcrumbsBox_0
+{
+	font-family: Calibri;
+	font-style: italic;
+	color: #a0522d;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
 .micro-response1053736740 .glossaryTerm
 {
 	color: #000000;
@@ -483,24 +501,6 @@
 	background-color: #dcdcdc;
 	border: solid 1px #000000;
 	margin: 0px;
-}
-
-.micro-response1053736740 div.MCBreadcrumbsBox_0
-{
-	font-family: Calibri;
-	font-style: italic;
-	color: #a0522d;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
-
-.micro-response1053736740 .xref
-{
-	color: blue;
-	text-decoration: underline;
 }
 
 .micro-response1053736740 .dropDownHotspot
